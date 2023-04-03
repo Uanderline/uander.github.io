@@ -1,0 +1,409 @@
+body,
+p,
+a,
+h1,
+h2,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/*Menu*/
+
+
+.bg-menu {
+  background: #000000;
+}
+
+.menu {
+  padding: 15px 0px 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-nav a {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1em;
+  margin: 0 60px;
+  color: #ffffff;
+  display: block;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-family: "Shippori Mincho", serif;
+  color: #ffffff;
+}
+
+.logo a span {
+  color: #2e86ab;
+}
+
+/*Media Query tablet 780px Sessao menu*/
+@media (min-width: 750px) {
+  .logo a {
+    font-size: 2em;
+  }
+  .menu {
+    padding: 15px 0px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu-nav a {
+    font-size: 1.125em;
+  }
+}
+
+/*Media Query tablet 1024px Sessao menu*/
+@media (min-width: 1024px) {
+}
+
+/*Sessão Estudante*/
+.sessao-estudante {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.subtitulo {
+  font-size: 1em;
+  font-family: "Shippori Mincho", serif;
+  color: #000000;
+  margin: 30px 0 20px 10px;
+  padding: 10px;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 98px;
+  height: 1px;
+  background: #000000;
+}
+
+.subtitulo p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+}
+
+.sessao-estudante ul li p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  max-width: 300px;
+  text-align: left;
+}
+
+li span:last-child {
+  padding: 10px;
+}
+
+.span-underline {
+  padding: 5px;
+  font-weight: normal !important;
+}
+
+.sessao-estudante ul li p span {
+  font-weight: bold;
+}
+
+.sessao-estudante ul li p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 2px;
+  background: #000000;
+  margin: 5px 5px;
+}
+
+.sessao-estudante ul li {
+  padding: 10px;
+}
+
+.estudante-citacao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  padding: 30px;
+  text-align: center;
+  font-style: italic;
+}
+
+/*Media Query tablet 750px Sessão estudante*/
+@media (min-width: 750px) {
+  .subtitulo {
+    font-size: 1.125em;
+  }
+
+  .sessao-estudante ul li p {
+    max-width: 100%;
+    font-size: 1em;
+  }
+  .subtitulo::after {
+    width: 110px;
+  }
+  .estudante-citacao {
+    font-size: 1em;
+  }
+}
+
+/*Media Query tablet 1024px Sessao Estudante*/
+@media (min-width: 1024px) {
+}
+
+/*Sessão habilidades*/
+
+.titulo {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.5em;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.sessao-habilidades {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  padding: 10px;
+}
+
+.card-habilidades-atual p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  color: #2e86ab;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.sessao-habilidades-item p,
+.sessao-habilidades-item-atual p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  color: #ffffff;
+  margin: 20px;
+  text-align: center;
+}
+
+.card-habilidades {
+  max-width: 260px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px 13px 0px 10px;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card-habilidades p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #2e86ab;
+}
+
+.sessao-habilidades-item-atual::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  margin: 20px 0 auto;
+}
+
+.descricao-contato {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  color: #2e86ab;
+  margin: 20px;
+  text-align: center;
+}
+
+.contato-citacao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  color: #ffffff;
+  margin: 30px;
+  text-align: center;
+}
+
+/*Media Query tablet 780px Habilidades*/
+@media (min-width: 750px) {
+  .titulo {
+    font-size: 2em;
+  }
+
+  .sessao-habilidades {
+    display: flex;
+  }
+  .segura-contato {
+    display: flex;
+  }
+  .sessao-habilidades-item {
+    width: calc(100% / 3);
+    padding: 10px;
+  }
+  .card-habilidades img {
+    height: 50px;
+    width: auto;
+  }
+  .card-habilidades p {
+    font-size: 1em;
+  }
+  .sessao-habilidades-item p,
+  .sessao-habilidades-item-atual p {
+    font-size: 1em;
+  }
+}
+
+/*Media Query tablet 1024px Sessao habilidades*/
+@media (min-width: 1024px) {
+}
+
+/*Sessao contato*/
+.sessao-contato {
+  background: #ffffff;
+}
+
+.titulo-contato {
+  font-size: 1.5em;
+  font-family: "Shippori Mincho", serif;
+  color: #000000;
+  padding: 30px;
+  display: block;
+  text-align: center;
+}
+
+.titulo-contato::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #000000;
+  margin: 0 auto;
+}
+
+.sessao-contato-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.agrupamento-midia {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.icone-contato {
+  padding: 10px;
+  display: block;
+}
+.p-contato {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.informacao-contato-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.btn-download {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125em;
+  color: #2e86ab;
+  border: 1px solid #2e86ab;
+  width: 200px;
+  height: 55px;
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.footer {
+  background: #000000;
+}
+
+.footer h1 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.125em;
+  color: #ffffff;
+  display: block;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+
+/*Media Query tablet 750 Sessao contato E Footer*/
+@media (min-width: 750px) {
+  .midia {
+    display: flex;
+    justify-content: space-around;
+  }
+  .titulo-contato {
+    font-size: 2em;
+  }
+
+  .titulo-contato::after {
+    width: 112px;
+  }
+  .footer h1 {
+    font-size: 2em;
+  }
+  .informacao-contato-p {
+    font-size: 1em;
+  }
+  .p-contato {
+    font-size: 1em;
+  }
+}
+
+/*Media Query tablet 1024px Sessao menu*/
+@media (min-width: 1024px) {
+}
